@@ -1,0 +1,61 @@
+.header__links {
+    display: flex;
+    align-items: center;
+}
+
+.header__links > * {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(95, 95, 95);
+    width: 82px;
+    height: 60px;
+    transition: 0.1s;
+}
+
+.header__links > div:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.header__links > div > * {
+    font-size: 28px;
+}
+
+.header__links > div > p {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.header__links > .active {
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+/* FOR THE ACTIVE OPTION */
+#root > div > div > div.header__right > div:nth-child(1) > div {
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+/* profile image resized */
+#root > div > div > div.header__right > div:nth-child(6) > div > div > div {
+    height: 28px;
+    width: 28px;
+}
+
+.links__profile > span > p {
+    font-size: 12px;
+    margin-right: -5px;
+}
+
+.links__profile > span {
+    display: flex;
+    align-items: center;
+}
+
+/* border between profile photo and work */
+#root > div > div > div.header__right > div:nth-child(6) > div{
+    border-right: 0.1px solid rgb(219, 219, 219);
+}
